@@ -58,7 +58,7 @@ body{
     &-visual{
         box-shadow: 0 0 0 22px transparent, 0 0 0 1px rgba($gray, $alpha); /*I способ*/;
         border-radius: 100%;
-        padding 53px;
+        padding: 53px;
         &__image{
             border: 1px solid rgba($gray, $alpha); /*II способ*/  /*бордером можно воспользоваться всего раз, поэтому у нас несколько оберток*/
             border-radius: 100%;
