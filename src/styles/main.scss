@@ -56,16 +56,17 @@ body{
         }
     }
     &-visual{
-        box-shadow: 0 0 0 22px transparent, 0 0 0 1px rgba($gray, $alpha); /*I способ*/
+        box-shadow: 0 0 0 22px transparent, 0 0 0 1px rgba($gray, $alpha); /*I способ*/;
         border-radius: 100%;
         padding 53px;
         &__image{
             border: 1px solid rgba($gray, $alpha); /*II способ*/  /*бордером можно воспользоваться всего раз, поэтому у нас несколько оберток*/
             border-radius: 100%;
-            padding 21px;
-            img{
+            padding: 30px;
+            img {
                 border-radius: 100%;
                 box-shadow: 12px 48px 42px 0 rgba($gray, $alpha);
+                padding: 21px;
             }
         }
     }
