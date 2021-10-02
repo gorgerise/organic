@@ -1,20 +1,22 @@
 .header{
-    max-width: 1440px;
-    margin: 0 auto;
-    padding-top: 40px;
     display: flex;
     justify-content: space-between;
     align-items: center;
+    max-width: 1440px;
+    margin: 0 auto;
+    padding-top: 40px;
+    padding-bottom: 46px;
     &-item{
         display: flex;
         justify-content: space-between;
         align-items: center;
     }
     &__tel{
+        transition: 0.3s ease;
         text-decoration: none;
         color: $gray;
         font-weight: 500;
-        transition: 0.3s ease;
+        letter-spacing: 0.075rem;
         &:hover{
             color: $orange;
         }
@@ -24,7 +26,7 @@
     position: relative;
     width: 2.5rem;
     height: 2.5rem;
-    margin-left: 82px;
+    margin-left: 80px;
     &__button{
         width: 2.5rem;
         height: 2.5rem;
