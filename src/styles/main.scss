@@ -59,6 +59,7 @@ body{
         box-shadow: 0 0 0 22px transparent, 0 0 0 1px rgba($gray, $alpha); /*I способ*/;
         border-radius: 100%;
         padding: 53px;
+        position: relative;
         &__image{
             border: 1px solid rgba($gray, $alpha); /*II способ*/  /*бордером можно воспользоваться всего раз, поэтому у нас несколько оберток*/
             border-radius: 100%;
@@ -67,6 +68,43 @@ body{
                 border-radius: 100%;
                 box-shadow: 12px 48px 42px 0 rgba($gray, $alpha);
                 padding: 21px;
+            }
+        }
+        &__btn{
+            background-color: transparent;
+            border: none;
+            color: rgba($gray, 0.8);
+            text-align: left;
+            position: absolute;
+            span {
+                color: rgba($gray, 1);
+                display: block;
+                margin-top: 6px;
+            }
+            &::before{
+                content: '';
+                display: block;
+                width: 11px;
+                height: 11px;
+                border-radius: 100%;
+                background-color: $gray;
+                box-shadow: 0 0 0 4px #fff, 0 0 0 5px $gray;
+                position: absolute;
+            }
+            &:focus{
+                outline: none;
+                &::before{
+                    background-color: $orange;
+                    box-shadow: 0 0 0 4px #fff, 0 0 0 5px $orange;
+                }
+            }
+        }
+        &__01{
+            left: 58px;
+            top: 45px;
+            &::before{
+                left: 91px;
+                top: 22px;
             }
         }
     }
